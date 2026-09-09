@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil - Hadryan Rizky Dimas Saputra</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">Hadryan<span>.</span></a>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <p class="greeting">Hello,</p>
+          <h1 class="hero-name">I Am <span>Hadryan Rizky Dimas Saputra</span></h1>
+          <h2 class="hero-title">Undergraduate Informatics Engineering Student</h2>
+          <div class="hero-action">
+            <a href="#contact" class="btn btn-primary">Let's talk &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Kolom Gambar Kanan -->
+        <div class="hero-image-wrapper">
+          <div class="image-shape-bg"></div>
+          <img src="Foto/20250722_235535_0000.png" alt="Foto Profil Hadryan Rizky Dimas Saputra" class="profile-img">
+        </div>
+      </div>
+
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,32L60,42.7C120,53,240,75,360,74.7C480,75,600,53,720,48C840,43,960,53,1080,64C1200,75,1320,85,1380,90.7L1440,96L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>About me</h2>
+          <div class="heading-line"></div>
+        </div>
+        <div class="about-content">
+          <p class="about-desc">
+            Halo, saya adalah mahasiswa S1 Teknik Informatika di Institut Teknologi Sepuluh Nopember (ITS). Saya memiliki minat besar dalam pengembangan perangkat lunak robotika, khususnya untuk Autonomous Underwater Vehicles, serta pengolahan citra (computer vision). Saya terbiasa merancang sistem menggunakan C++, Python, dan ROS 2.
+          </p>
+          <div class="about-buttons">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <a href="#proyek" class="btn btn-outline">View Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Education</h2>
+          <div class="heading-line"></div>
+        </div>
+        <div class="education-list">
+          <div class="education-card">
+            <div class="education-badge">2025 - Sekarang</div>
+            <div class="education-info">
+              <h3>Institut Teknologi Sepuluh Nopember (ITS)</h3>
+              <p>S1 Teknik Informatika</p>
+            </div>
+          </div>
+
+          <div class="education-card">
+            <div class="education-badge">Lulus 2025</div>
+            <div class="education-info">
+              <h3>SMAN 1 Kepanjen</h3>
+              <p>Sekolah Menengah Atas</p>
+            </div>
+          </div>
+
+          <div class="education-card">
+            <div class="education-badge">Lulus 2022</div>
+            <div class="education-info">
+              <h3>SMPN 2 Sumberpucung</h3>
+              <p>Sekolah Menengah Pertama</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyek" class="project-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Proyek</h2>
+          <div class="heading-line"></div>
+        </div>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3 class="project-title">Banyubramanta Vision System</h3>
+            <p class="project-desc">
+              Peningkatan sistem deteksi visi (YOLO &amp; CLAHE) untuk vision jarak jauh pada robot bawah air.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">SeaTrack</h3>
+            <p class="project-desc">
+              Pengembangan backend dan machine learning pipeline untuk sistem deteksi sampah perairan open-source.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">Flood Early Warning System</h3>
+            <p class="project-desc">
+              Pembuatan layanan backend berbasis FastAPI dan PostgreSQL untuk memantau data telemetri banjir.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <h3 class="project-title">CyberHack: Enterprise Resource Planning</h3>
+            <p class="project-desc">
+              Sistem manajemen terintegrasi yang digunakan oleh perusahaan untuk mengelola dan mengotomatisasi aktivitas bisnis mereka, yang kami perlombakan dalam event CyberHack.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Contact Me</h2>
+          <div class="heading-line"></div>
+        </div>
+        <div class="contact-wrapper">
+          <form class="contact-form" action="#" method="POST" onsubmit="return false;">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>5025251027_Hadryan Rizky Dimas Saputra_Pemrograman Web (B)</p>
+    </div>
+  </footer>
+
+</body>
+</html>
