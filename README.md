@@ -1,1 +1,5 @@
-# Pemrograman-Web_Hadryan-Rizky-Dimas-Saputra_5025251027
+# Pemrograman Web
+
+- **Nama:** Hadryan Rizky Dimas Saputra
+- **NRP:** 5025251027
+- **Kelas:** Pemrograman Website B
