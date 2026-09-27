@@ -3,116 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak Kami - SMAN 1 Kepanjen</title>
+    <title>Kontak Kami & Lokasi - SMAN 1 Kepanjen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo-brand">
+    <div class="topbar">
+        <div class="container topbar-container">
+            <div class="topbar-info">
+                <span>Telepon: (0341) 987654</span>
+                <span>Email: info@sman1kepanjen-dummy.sch.id</span>
+                <span>Jam Kerja: Senin - Jumat, 07.00 - 15.30 WIB</span>
+            </div>
+            <div class="topbar-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a> |
+                <a href="https://instagram.com" target="_blank">Instagram</a> |
+                <a href="https://youtube.com" target="_blank">YouTube</a> |
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="brand">
                 <img src="file/logo_sekolah.png" alt="Logo SMAN 1 Kepanjen">
-                <h1>SMAN 1 Kepanjen</h1>
+                <div class="brand-text">
+                    <h1>SMAN 1 Kepanjen</h1>
+                    <p>Kabupaten Malang, Jawa Timur</p>
+                </div>
             </a>
-            <button class="hamburger" id="hamburgerBtn" aria-label="Menu Navigasi">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav id="navMenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="jurusan.html">Jurusan</a></li>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#profil">Profil</a></li>
+                    <li><a href="jurusan.html">Akademik & Jurusan</a></li>
+                    <li><a href="jurusan.html#kesiswaan">Kesiswaan</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="ppdb.html">PPDB</a></li>
                     <li><a href="kontak.html" class="active">Kontak</a></li>
+                    <li><a href="ppdb.html" class="btn-nav">Daftar PPDB</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="hero">
+    <section class="subpage-header">
         <div class="container">
-            <h2>Hubungi SMAN 1 Kepanjen</h2>
-            <p>Silakan hubungi kami atau kirim pesan melalui formulir kontak untuk informasi seputar akademik, pendaftaran siswa, dan layanan lainnya.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Beranda</a> / <span>Hubungi Kami</span>
+            </div>
+            <h2>Kontak & Lokasi Sekolah</h2>
+            <p>Silakan hubungi kami untuk informasi seputar akademik, pendaftaran siswa baru, dan layanan administrasi sekolah.</p>
         </div>
-    </div>
+    </section>
 
     <main class="container">
-        <div class="contact-layout">
-            <div class="contact-info">
-                <h2>Informasi Sekolah</h2>
-                <div class="contact-info-item">
-                    <strong>Alamat Lengkap:</strong>
-                    <p>Jl. Raya Pendidikan No. 123, Kepanjen, Malang, Jawa Timur 65163</p>
-                </div>
-                <div class="contact-info-item">
-                    <strong>Nomor Telepon:</strong>
-                    <p>(0341) 987654</p>
-                </div>
-                <div class="contact-info-item">
-                    <strong>Email Resmi:</strong>
-                    <p>info@sman1kepanjen-dummy.sch.id</p>
-                </div>
-                <div class="contact-info-item">
-                    <strong>Jam Operasional Kantor:</strong>
-                    <p>Senin - Jumat : 07.00 - 15.30 WIB</p>
-                </div>
+        <div class="layout-wrapper">
+            
+            <div class="main-content">
+                
+                <section class="card">
+                    <h2 class="card-title">Informasi Kontak Resmi</h2>
+                    <p>Masyarakat, orang tua murid, dan calon peserta didik dapat menghubungi bagian tata usaha dan humas melalui kontak berikut:</p>
+                    
+                    <div class="table-wrapper">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="width: 28%;"><strong>Alamat Kampus</strong></td>
+                                    <td>Jl. Raya Pendidikan No. 123, Kepanjen, Malang, Jawa Timur 65163</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nomor Telepon</strong></td>
+                                    <td>(0341) 987654 / Hotline: 0812-3456-7890</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Email Resmi</strong></td>
+                                    <td>info@sman1kepanjen-dummy.sch.id</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Jam Operasional</strong></td>
+                                    <td>Senin - Jumat : 07.00 - 15.30 WIB (Sabtu, Minggu, & Libur Nasional Tutup)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2 class="card-title">Kirimkan Pesan atau Pertanyaan</h2>
+                    <p>Silakan isi formulir di bawah ini secara lengkap. Pesan Anda akan diteruskan ke staf tata usaha yang berwenang:</p>
+                    
+                    <form id="contactForm" action="kontak.html" method="GET" style="margin-top: 15px;">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Alamat Email</label>
+                            <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subjek">Subjek Pesan</label>
+                            <input type="text" id="subjek" name="subjek" placeholder="Contoh: Informasi PPDB atau Layanan Legalisir" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pesan">Isi Pesan</label>
+                            <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pertanyaan atau pesan Anda secara detail..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="padding: 11px 26px;">Kirim Pesan Sekarang</button>
+                    </form>
+                </section>
+
+                <section class="card">
+                    <h2 class="card-title">Peta Lokasi Kampus</h2>
+                    <p>SMAN 1 Kepanjen berlokasi strategis di pusat kota Kepanjen dan dapat diakses dengan mudah oleh kendaraan roda dua maupun roda empat:</p>
+                    
+                    <div class="map-box">
+                        <iframe 
+                            title="Peta Lokasi SMAN 1 Kepanjen"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0468341648054!2d112.57012347499778!3d-8.096739691931888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e789f2a0b123456%3A0x7890abcdef123456!2sSMAN%201%20Kepanjen!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <div style="margin-top: 15px; font-size: 13.5px; color: #555555;">
+                        <p><strong>Petunjuk Rute:</strong> Dari arah Stasiun Kepanjen berjarak sekitar 1,5 km ke arah utara (10 menit perjalanan). Dari arah Terminal Talangagung berjarak sekitar 3 km.</p>
+                    </div>
+                </section>
+
             </div>
 
-            <div class="contact-form-card">
-                <h2>Kirimkan Pesan</h2>
-                <form id="contactForm" action="#" method="POST">
-                    <div class="form-group">
-                        <label for="nama">Nama Lengkap</label>
-                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda">
-                    </div>
+            <aside class="sidebar">
+                
+                <div class="sidebar-widget" style="border-top: 3px solid #154c79;">
+                    <h3 class="sidebar-title">Jam Pelayanan Tamu</h3>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Senin - Kamis:</strong> 07.30 - 15.00 WIB</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Jumat:</strong> 07.30 - 11.00 WIB</p>
+                    <p style="font-size: 13px; margin-bottom: 0;"><strong>Istirahat:</strong> 12.00 - 13.00 WIB</p>
+                </div>
 
-                    <div class="form-group">
-                        <label for="email">Alamat Email</label>
-                        <input type="email" id="email" name="email" placeholder="nama@email.com">
-                    </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">Media Sosial Resmi</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="https://facebook.com" target="_blank">- Facebook: SMAN 1 Kepanjen Official</a></li>
+                        <li><a href="https://instagram.com" target="_blank">- Instagram: @sman1kepanjen</a></li>
+                        <li><a href="https://youtube.com" target="_blank">- YouTube: SMAN 1 Kepanjen Media</a></li>
+                        <li><a href="https://twitter.com" target="_blank">- Twitter/X: @sman1kepanjen</a></li>
+                        <li><a href="https://wa.me/6281234567890" target="_blank">- WhatsApp Hotline: 0812-3456-7890</a></li>
+                    </ul>
+                </div>
 
-                    <div class="form-group">
-                        <label for="subjek">Subjek Pesan</label>
-                        <input type="text" id="subjek" name="subjek" placeholder="Contoh: Informasi PPDB atau Kurikulum">
-                    </div>
+                <div class="sidebar-widget" style="border-top: 3px solid #e67e22;">
+                    <h3 class="sidebar-title">Helpdesk PPDB</h3>
+                    <p style="font-size: 13px; color: #555555; margin-bottom: 12px;">Untuk konsultasi persyaratan jalur zonasi, prestasi, dan mutasi tugas, silakan hubungi tim PPDB kami.</p>
+                    <a href="ppdb.html" class="btn btn-primary btn-block">Buka Portal PPDB</a>
+                </div>
 
-                    <div class="form-group">
-                        <label for="pesan">Isi Pesan</label>
-                        <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pertanyaan atau pesan Anda secara detail..."></textarea>
-                    </div>
+            </aside>
 
-                    <button type="submit">Kirim Pesan Sekarang</button>
-                </form>
-            </div>
         </div>
     </main>
 
-    <footer>
-        <div class="footer-container">
+    <footer class="footer">
+        <div class="container footer-container">
             <div class="footer-col">
                 <h3>SMAN 1 Kepanjen</h3>
-                <p>Sekolah Menengah Atas Negeri unggulan di Kabupaten Malang yang berdedikasi mencetak generasi berkarakter luhur, berprestasi tinggi, dan berbudaya lingkungan.</p>
+                <p>Sekolah Menengah Atas Negeri unggulan di Kabupaten Malang yang berdedikasi mencetak generasi berkarakter luhur, berprestasi tinggi, dan berbudaya lingkungan hidup.</p>
+                <p style="font-size: 12px; color: #9cb1c5; margin-top: 10px;">NPSN: 20517724 | NSS: 301051806001</p>
             </div>
             <div class="footer-col">
                 <h3>Tautan Cepat</h3>
                 <ul>
-                    <li><a href="index.html">Halaman Utama (Home)</a></li>
+                    <li><a href="index.html">Beranda (Home)</a></li>
+                    <li><a href="index.html#profil">Profil & Sambutan</a></li>
                     <li><a href="jurusan.html">Program Jurusan</a></li>
-                    <li><a href="kontak.html">Hubungi Kami (Kontak)</a></li>
+                    <li><a href="jurusan.html#kesiswaan">Kesiswaan & Ekskul</a></li>
+                    <li><a href="berita.html">Warta & Berita</a></li>
+                    <li><a href="galeri.html">Galeri Foto</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h3>Kontak Singkat</h3>
+                <h3>Program Jurusan</h3>
+                <ul>
+                    <li><a href="jurusan.html#ipa-teknik">IPA - Teknik</a></li>
+                    <li><a href="jurusan.html#ipa-kesehatan">IPA - Kesehatan</a></li>
+                    <li><a href="jurusan.html#ipa-bahasa">IPA - Bahasa</a></li>
+                    <li><a href="jurusan.html#ips-sosial">IPS - Sosial</a></li>
+                    <li><a href="jurusan.html#ips-bahasa">IPS - Bahasa</a></li>
+                    <li><a href="jurusan.html#bahasa">Bahasa & Sastra</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Alamat & Kontak</h3>
                 <p>Jl. Raya Pendidikan No. 123, Kepanjen, Malang, Jawa Timur 65163</p>
                 <p>Telepon: (0341) 987654</p>
                 <p>Email: info@sman1kepanjen-dummy.sch.id</p>
+                <p>Jam Kerja: Senin - Jumat (07.00 - 15.30 WIB)</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SMAN 1 Kepanjen. Hak Cipta Dilindungi.</p>
+            <div class="container">
+                <p>&copy; 2026 SMAN 1 Kepanjen. Hak Cipta Dilindungi.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>

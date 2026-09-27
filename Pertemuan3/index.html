@@ -3,101 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMAN 1 Kepanjen - Berkarakter, Unggul, Berbudaya Lingkungan</title>
+    <title>SMAN 1 Kepanjen - Berkarakter Unggul & Berbudaya Lingkungan</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo-brand">
+    <div class="topbar">
+        <div class="container topbar-container">
+            <div class="topbar-info">
+                <span>Telepon: (0341) 987654</span>
+                <span>Email: info@sman1kepanjen-dummy.sch.id</span>
+                <span>Jam Kerja: Senin - Jumat, 07.00 - 15.30 WIB</span>
+            </div>
+            <div class="topbar-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a> |
+                <a href="https://instagram.com" target="_blank">Instagram</a> |
+                <a href="https://youtube.com" target="_blank">YouTube</a> |
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="brand">
                 <img src="file/logo_sekolah.png" alt="Logo SMAN 1 Kepanjen">
-                <h1>SMAN 1 Kepanjen</h1>
+                <div class="brand-text">
+                    <h1>SMAN 1 Kepanjen</h1>
+                    <p>Kabupaten Malang, Jawa Timur</p>
+                </div>
             </a>
-            <button class="hamburger" id="hamburgerBtn" aria-label="Menu Navigasi">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav id="navMenu">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="jurusan.html">Jurusan</a></li>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="jurusan.html">Akademik & Jurusan</a></li>
+                    <li><a href="jurusan.html#kesiswaan">Kesiswaan</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="ppdb.html">PPDB</a></li>
                     <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="ppdb.html" class="btn-nav">Daftar PPDB</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="hero">
+    <section class="hero">
         <div class="container">
-            <h2>Selamat Datang di SMAN 1 Kepanjen</h2>
-            <p>Mewujudkan insan yang berakhlak mulia, cerdas, berkarakter unggul, kompetitif di era global, dan berbudaya lingkungan hidup.</p>
+            <div class="hero-content">
+                <span class="hero-subtitle">Website Resmi SMA Negeri 1 Kepanjen</span>
+                <h2>Mewujudkan Insan Berkarakter Unggul, Cerdas, dan Berbudaya Lingkungan</h2>
+                <p>Selamat datang di portal informasi resmi SMAN 1 Kepanjen. Kami berkomitmen menghadirkan pendidikan berkualitas, mengembangkan potensi siswa secara optimal, dan membina generasi yang peduli terhadap pelestarian lingkungan hidup.</p>
+                <div class="hero-buttons">
+                    <a href="#profil" class="btn btn-secondary">Profil Sekolah</a>
+                    <a href="ppdb.html" class="btn btn-primary">Informasi PPDB</a>
+                    <a href="#video-profil" class="btn btn-outline">Video Profil</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <main class="container">
-        <section class="card">
-            <h2>Sambutan Kepala Sekolah</h2>
-            <div class="sambutan-wrapper">
-                <div class="sambutan-img-box">
-                    <img src="file/kepala_sekolah.jpeg" alt="Foto Kepala SMAN 1 Kepanjen">
-                </div>
-                <div class="sambutan-text">
-                    <h3>Fadilah Umi Maisyaroh, M.Pd.</h3>
-                    <p class="jabatan">Kepala SMAN 1 Kepanjen</p>
-                    <p>Assalamu’alaikum Warahmatullahi Wabarakatuh, Salam Sejahtera untuk kita semua.</p>
-                    <p>Selamat datang di website resmi SMA Negeri 1 Kepanjen. Puji dan syukur senantiasa kita panjatkan ke hadirat Tuhan Yang Maha Esa atas karunia dan limpahan rahmat-Nya sehingga media informasi ini dapat hadir sebagai jembatan komunikasi bagi seluruh sivitas akademika, orang tua siswa, alumni, dan masyarakat luas.</p>
-                    <p>SMAN 1 Kepanjen berkomitmen menghadirkan ekosistem pembelajaran yang bermutu, inklusif, dan berorientasi masa depan dengan berlandaskan nilai integritas moral, penguasaan teknologi informasi, serta aksi nyata peduli pelestarian lingkungan hidup.</p>
-                </div>
+        
+        <div class="stats-container" style="margin-top: 30px;">
+            <div class="stat-box">
+                <div class="stat-number">1.188</div>
+                <div class="stat-label">Siswa Terdaftar</div>
             </div>
-        </section>
+            <div class="stat-box accent">
+                <div class="stat-number">78</div>
+                <div class="stat-label">Guru & Staf Pendidik</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">98.4%</div>
+                <div class="stat-label">Diterima di PTN</div>
+            </div>
+            <div class="stat-box accent">
+                <div class="stat-number">Akreditasi A</div>
+                <div class="stat-label">Predikat Unggul (96.50)</div>
+            </div>
+        </div>
 
-        <section class="card">
-            <h2>Visi & Misi Sekolah</h2>
+        <div class="layout-wrapper">
             
-            <h3>Visi Sekolah</h3>
-            <div class="visi-box">
-                "Terwujudnya Lulusan yang Bertaqwa, Berkarakter Unggul, Cerdas, Terampil, Mandiri, Berprestasi Global, dan Berbudaya Lingkungan Hidup."
+            <div class="main-content">
+                
+                <section class="card" id="profil">
+                    <h2 class="card-title">Sambutan Kepala Sekolah</h2>
+                    <div class="sambutan-flex">
+                        <div class="sambutan-photo">
+                            <img src="file/kepala_sekolah.jpeg" alt="Foto Kepala SMAN 1 Kepanjen">
+                            <div class="sambutan-name">Fadilah Umi Maisyaroh, M.Pd.</div>
+                            <div class="sambutan-role">Kepala SMAN 1 Kepanjen</div>
+                        </div>
+                        <div class="sambutan-text">
+                            <p><strong>Assalamu’alaikum Warahmatullahi Wabarakatuh, Salam Sejahtera untuk kita semua.</strong></p>
+                            <p>Selamat datang di website resmi SMA Negeri 1 Kepanjen. Puji dan syukur senantiasa kita panjatkan ke hadirat Tuhan Yang Maha Esa atas karunia dan limpahan rahmat-Nya sehingga media informasi ini dapat hadir sebagai jembatan komunikasi bagi seluruh sivitas akademika, orang tua siswa, alumni, dan masyarakat luas.</p>
+                            <p>SMAN 1 Kepanjen berkomitmen menghadirkan ekosistem pembelajaran yang bermutu, inklusif, dan berorientasi masa depan dengan berlandaskan nilai integritas moral, penguasaan teknologi informasi, serta aksi nyata peduli pelestarian lingkungan hidup.</p>
+                            <p>Semoga website ini dapat memberikan gambaran utuh mengenai program kerja, kegiatan kesiswaan, prestasi, serta layanan akademik yang diselenggarakan di sekolah kami.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2 class="card-title">Visi & Misi Sekolah</h2>
+                    
+                    <h3>Visi Sekolah</h3>
+                    <div class="visi-box">
+                        "Terwujudnya Lulusan yang Bertaqwa, Berkarakter Unggul, Cerdas, Terampil, Mandiri, Berprestasi Global, dan Berbudaya Lingkungan Hidup."
+                    </div>
+
+                    <h3>Misi Sekolah</h3>
+                    <ol class="misi-list">
+                        <li>Menumbuhkembangkan penghayatan dan pengamalan nilai-nilai keagamaan guna membentuk generasi yang bertakwa dan berakhlak mulia.</li>
+                        <li>Menyelenggarakan proses pembelajaran yang inovatif, bermutu, dan berpusat pada pengembangan potensi peserta didik.</li>
+                        <li>Mendorong dan memfasilitasi pencapaian prestasi akademik maupun non-akademik di tingkat regional, nasional, dan internasional.</li>
+                        <li>Menumbuhkan budaya disiplin, kejujuran, semangat gotong royong, toleransi, serta cinta tanah air pada seluruh warga sekolah.</li>
+                        <li>Menciptakan lingkungan sekolah yang asri, bersih, sehat, dan ramah lingkungan sebagai sarana pembentukan karakter peduli alam.</li>
+                    </ol>
+                </section>
+
+                <section class="card">
+                    <h2 class="card-title">Keunggulan SMAN 1 Kepanjen</h2>
+                    <p>Sebagai salah satu sekolah rujukan di Kabupaten Malang, SMAN 1 Kepanjen menerapkan standar pendidikan komprehensif:</p>
+                    
+                    <div class="grid-3" style="margin-top: 15px;">
+                        <div class="feature-box">
+                            <h4>Kurikulum Merdeka</h4>
+                            <p>Pembelajaran berbasis riset, penguatan penalaran kritis, dan Projek Penguatan Profil Pelajar Pancasila (P5).</p>
+                        </div>
+                        <div class="feature-box">
+                            <h4>Sekolah Adiwiyata</h4>
+                            <p>Kampus hijau berkelanjutan dengan program pelestarian alam, pemilahan sampah, dan kebun botani.</p>
+                        </div>
+                        <div class="feature-box">
+                            <h4>Laboratorium Modern</h4>
+                            <p>Fasilitas lab komputer, bahasa, dan sains terpadu yang memadai untuk praktik dan uji kompetensi.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2 class="card-title">Sarana & Fasilitas Pembelajaran</h2>
+                    <p>SMAN 1 Kepanjen menyediakan sarana pendukung kegiatan belajar mengajar yang representatif:</p>
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 25%;">Fasilitas</th>
+                                    <th>Deskripsi & Pemanfaatan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Lab Komputer</strong></td>
+                                    <td>4 ruang laboratorium dengan 160 unit PC untuk CBT, Asesmen Nasional, dan pembelajaran TIK.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Lab Sains Terpadu</strong></td>
+                                    <td>Laboratorium Fisika, Kimia, dan Biologi lengkap dengan peralatan mikroskop dan instrumen eksperimen.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Perpustakaan</strong></td>
+                                    <td>Perpustakaan "Cakrawala" dengan ribuan judul buku pelajaran, literatur referensi, dan pojok baca digital.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Sarana Olahraga</strong></td>
+                                    <td>Lapangan basket, lapangan voli, futsal, dan lintasan atletik untuk pembinaan kebugaran jasmani.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Masjid Al-Hikmah</strong></td>
+                                    <td>Pusat ibadah warga sekolah, kegiatan sholat berjamaah, dan pembinaan keagamaan siswa.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Green House</strong></td>
+                                    <td>Kebun konservasi tanaman, pembibitan hidroponik, dan area praktik pendidikan lingkungan hidup.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2 class="card-title">Berita & Informasi Terbaru</h2>
+                    
+                    <div class="news-item">
+                        <div class="news-item-title">
+                            <a href="berita.html#berita-1">Tim Robotika SMAN 1 Kepanjen Raih Medali Emas National Science Fair</a>
+                        </div>
+                        <div class="news-meta">
+                            <span>Kategori: <strong class="news-category">Prestasi</strong></span>
+                            <span>Tanggal: 22 September 2026</span>
+                            <span>Penulis: Tim Jurnalistik</span>
+                        </div>
+                        <p class="news-summary">
+                            Inovasi robot pemilah sampah otomatis berbasis IoT karya siswa peminatan IPA-Teknik berhasil meraih predikat Juara 1 pada ajang kompetisi sains nasional di Jakarta...
+                        </p>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-item-title">
+                            <a href="berita.html#berita-2">Sosialisasi Jalur Masuk PTN (SNBP & UTBK-SNBT) Bersama Alumni</a>
+                        </div>
+                        <div class="news-meta">
+                            <span>Kategori: <strong class="news-category">Akademik</strong></span>
+                            <span>Tanggal: 18 September 2026</span>
+                            <span>Penulis: Humas Sekolah</span>
+                        </div>
+                        <p class="news-summary">
+                            Ratusan siswa kelas XII antusias mengikuti bimbingan strategi pemilihan program studi di perguruan tinggi negeri terkemuka bersama narasumber ikatan alumni...
+                        </p>
+                    </div>
+
+                    <div style="margin-top: 15px;">
+                        <a href="berita.html" class="btn btn-primary">Lihat Semua Berita &raquo;</a>
+                    </div>
+                </section>
+
+                <section class="card" id="video-profil">
+                    <h2 class="card-title">Video Profil Sekolah</h2>
+                    <p>Mengenal lebih dekat lingkungan belajar, suasana kelas, dan aktivitas ekstrakurikuler di SMAN 1 Kepanjen:</p>
+                    <div style="background-color: #0d3353; color: #ffffff; padding: 40px 20px; text-align: center; border-radius: 4px; margin-top: 12px;">
+                        <h3 style="color: #ffffff; margin-bottom: 6px;">Tayangan Profil Resmi SMAN 1 Kepanjen</h3>
+                        <p style="color: #dbe4ee; font-size: 13px;">Tahun Ajaran 2026/2027 • Durasi 4 Menit</p>
+                        <p style="margin-top: 14px;"><a href="https://youtube.com" target="_blank" class="btn btn-primary">Buka Video di YouTube</a></p>
+                    </div>
+                </section>
+
             </div>
 
-            <h3>Misi Sekolah</h3>
-            <ul class="misi-list">
-                <li>Menumbuhkembangkan penghayatan dan pengamalan nilai-nilai keagamaan guna membentuk generasi yang bertakwa dan berakhlak mulia.</li>
-                <li>Menyelenggarakan proses pembelajaran yang inovatif, bermutu, dan berpusat pada pengembangan potensi peserta didik.</li>
-                <li>Mendorong dan memfasilitasi pencapaian prestasi akademik maupun non-akademik di tingkat regional, nasional, dan internasional.</li>
-                <li>Menumbuhkan budaya disiplin, kejujuran, semangat gotong royong, toleransi, serta cinta tanah air pada seluruh warga sekolah.</li>
-                <li>Menciptakan lingkungan sekolah yang asri, bersih, sehat, dan ramah lingkungan sebagai sarana pembentukan karakter peduli alam.</li>
-            </ul>
-        </section>
+            <aside class="sidebar">
+                
+                <div class="sidebar-widget" style="border-top: 3px solid #e67e22;">
+                    <h3 class="sidebar-title">Informasi PPDB 2027/2028</h3>
+                    <p style="font-size: 13px; color: #555555; margin-bottom: 12px;">Penerimaan Peserta Didik Baru telah dibuka untuk Jalur Zonasi, Prestasi, Afirmasi, dan Perpindahan Tugas.</p>
+                    <a href="ppdb.html" class="btn btn-primary btn-block">Portal Pendaftaran PPDB</a>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">Akses Cepat</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="jurusan.html">- Program Peminatan Jurusan</a></li>
+                        <li><a href="jurusan.html#tabel-siswa">- Data Jumlah Siswa Aktif</a></li>
+                        <li><a href="jurusan.html#jadwal">- Kalender Akademik</a></li>
+                        <li><a href="jurusan.html#kesiswaan">- Organisasi OSIS & MPK</a></li>
+                        <li><a href="galeri.html">- Galeri Foto Kegiatan</a></li>
+                        <li><a href="kontak.html">- Alamat & Peta Lokasi</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">Agenda Sekolah</h3>
+                    <div class="agenda-item">
+                        <div class="agenda-date">01 - 10 Oktober 2026</div>
+                        <div class="agenda-title">Sumatif Tengah Semester (STS) Ganjil</div>
+                    </div>
+                    <div class="agenda-item">
+                        <div class="agenda-date">28 Oktober 2026</div>
+                        <div class="agenda-title">Peringatan Hari Sumpah Pemuda & Bulan Bahasa</div>
+                    </div>
+                    <div class="agenda-item">
+                        <div class="agenda-date">10 November 2026</div>
+                        <div class="agenda-title">Upacara Peringatan Hari Pahlawan Nasional</div>
+                    </div>
+                    <div class="agenda-item">
+                        <div class="agenda-date">01 - 12 Desember 2026</div>
+                        <div class="agenda-title">Sumatif Akhir Semester (SAS) Ganjil</div>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">Identitas Sekolah</h3>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>NPSN:</strong> 20517724</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Status:</strong> Negeri</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Akreditasi:</strong> Peringkat A (Unggul)</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Kurikulum:</strong> Kurikulum Merdeka</p>
+                    <p style="font-size: 13px; margin-bottom: 0;"><strong>Bentuk:</strong> Sekolah Menengah Atas (SMA)</p>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">Kontak Sekolah</h3>
+                    <p style="font-size: 13px; line-height: 1.5; margin-bottom: 6px;">Jl. Raya Pendidikan No. 123, Kepanjen, Malang, Jawa Timur 65163</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;">Telp: (0341) 987654</p>
+                    <p style="font-size: 13px; margin-bottom: 12px;">Email: info@sman1kepanjen-dummy.sch.id</p>
+                    <a href="kontak.html" class="btn btn-secondary btn-block" style="border: 1px solid #154c79;">Hubungi Kami</a>
+                </div>
+
+            </aside>
+
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-container">
+    <footer class="footer">
+        <div class="container footer-container">
             <div class="footer-col">
                 <h3>SMAN 1 Kepanjen</h3>
-                <p>Sekolah Menengah Atas Negeri unggulan di Kabupaten Malang yang berdedikasi mencetak generasi berkarakter luhur, berprestasi tinggi, dan berbudaya lingkungan.</p>
+                <p>Sekolah Menengah Atas Negeri unggulan di Kabupaten Malang yang berdedikasi mencetak generasi berkarakter luhur, berprestasi tinggi, dan berbudaya lingkungan hidup.</p>
+                <p style="font-size: 12px; color: #9cb1c5; margin-top: 10px;">NPSN: 20517724 | NSS: 301051806001</p>
             </div>
             <div class="footer-col">
                 <h3>Tautan Cepat</h3>
                 <ul>
-                    <li><a href="index.html">Halaman Utama (Home)</a></li>
+                    <li><a href="index.html">Beranda (Home)</a></li>
+                    <li><a href="#profil">Profil & Sambutan</a></li>
                     <li><a href="jurusan.html">Program Jurusan</a></li>
-                    <li><a href="kontak.html">Hubungi Kami (Kontak)</a></li>
+                    <li><a href="jurusan.html#kesiswaan">Kesiswaan & Ekskul</a></li>
+                    <li><a href="berita.html">Warta & Berita</a></li>
+                    <li><a href="galeri.html">Galeri Foto</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h3>Kontak Singkat</h3>
+                <h3>Program Jurusan</h3>
+                <ul>
+                    <li><a href="jurusan.html#ipa-teknik">IPA - Teknik</a></li>
+                    <li><a href="jurusan.html#ipa-kesehatan">IPA - Kesehatan</a></li>
+                    <li><a href="jurusan.html#ipa-bahasa">IPA - Bahasa</a></li>
+                    <li><a href="jurusan.html#ips-sosial">IPS - Sosial</a></li>
+                    <li><a href="jurusan.html#ips-bahasa">IPS - Bahasa</a></li>
+                    <li><a href="jurusan.html#bahasa">Bahasa & Sastra</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Alamat & Kontak</h3>
                 <p>Jl. Raya Pendidikan No. 123, Kepanjen, Malang, Jawa Timur 65163</p>
                 <p>Telepon: (0341) 987654</p>
                 <p>Email: info@sman1kepanjen-dummy.sch.id</p>
+                <p>Jam Kerja: Senin - Jumat (07.00 - 15.30 WIB)</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SMAN 1 Kepanjen. Hak Cipta Dilindungi.</p>
+            <div class="container">
+                <p>&copy; 2026 SMAN 1 Kepanjen. Hak Cipta Dilindungi.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>

@@ -3,211 +3,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Program Jurusan - SMAN 1 Kepanjen</title>
+    <title>Akademik, Jurusan & Kesiswaan - SMAN 1 Kepanjen</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo-brand">
+    <div class="topbar">
+        <div class="container topbar-container">
+            <div class="topbar-info">
+                <span>Telepon: (0341) 987654</span>
+                <span>Email: info@sman1kepanjen-dummy.sch.id</span>
+                <span>Jam Kerja: Senin - Jumat, 07.00 - 15.30 WIB</span>
+            </div>
+            <div class="topbar-links">
+                <a href="https://facebook.com" target="_blank">Facebook</a> |
+                <a href="https://instagram.com" target="_blank">Instagram</a> |
+                <a href="https://youtube.com" target="_blank">YouTube</a> |
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="brand">
                 <img src="file/logo_sekolah.png" alt="Logo SMAN 1 Kepanjen">
-                <h1>SMAN 1 Kepanjen</h1>
+                <div class="brand-text">
+                    <h1>SMAN 1 Kepanjen</h1>
+                    <p>Kabupaten Malang, Jawa Timur</p>
+                </div>
             </a>
-            <button class="hamburger" id="hamburgerBtn" aria-label="Menu Navigasi">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav id="navMenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="jurusan.html" class="active">Jurusan</a></li>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#profil">Profil</a></li>
+                    <li><a href="jurusan.html" class="active">Akademik & Jurusan</a></li>
+                    <li><a href="#kesiswaan">Kesiswaan</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="ppdb.html">PPDB</a></li>
                     <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="ppdb.html" class="btn-nav">Daftar PPDB</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="hero">
+    <section class="subpage-header">
         <div class="container">
-            <h2>Pilihan Program Jurusan</h2>
-            <p>Beragam peminatan akademik terpadu yang dirancang untuk membimbing siswa mencapai potensi optimal dan sukses ke perguruan tinggi impian.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Beranda</a> / <span>Akademik, Program Jurusan & Kesiswaan</span>
+            </div>
+            <h2>Program Akademik & Kesiswaan</h2>
+            <p>Informasi kurikulum, 6 peminatan jurusan terpadu, data peserta didik, dan wadah pengembangan bakat minat siswa.</p>
         </div>
-    </div>
+    </section>
 
     <main class="container">
-        <div class="jurusan-grid">
-            <div class="jurusan-card">
-                <h2>IPA-Teknik</h2>
-                <p>Program peminatan yang memfokuskan penguasaan sains terapan, matematika tingkat lanjut, rekayasa fisika terapan, logika komputasi, dan robotika modern untuk persiapan studi rumpun keteknikan.</p>
-                <h3>Poin Keunggulan Jurusan:</h3>
-                <ul>
-                    <li>Laboratorium Komputer, Fisika Terapan, dan Praktikum Robotika terintegrasi.</li>
-                    <li>Bimbingan intensif persiapan Olimpiade Fisika, Komputer, dan Kompetisi Sains Terapan.</li>
-                    <li>Peluang besar ke jurusan Teknik Informatika, Elektro, Mesin, Sipil, dan Arsitektur.</li>
-                </ul>
-            </div>
-
-            <div class="jurusan-card">
-                <h2>IPA-Kesehatan</h2>
-                <p>Program peminatan yang diarahkan pada pendalaman biologi medis, kimia organik, biokimia, dan sains biomedis sebagai fondasi utama pendidikan dokter dan tenaga medis masa depan.</p>
-                <h3>Poin Keunggulan Jurusan:</h3>
-                <ul>
-                    <li>Laboratorium Biologi Terpadu, Kimia Analitik, dan Ruang Kultur Jaringan modern.</li>
-                    <li>Pelatihan dasar riset biomedis dan pembinaan Olimpiade Biologi serta Kimia.</li>
-                    <li>Peluang besar ke jurusan Kedokteran Umum, Kedokteran Gigi, Farmasi, dan Bioteknologi.</li>
-                </ul>
-            </div>
-
-            <div class="jurusan-card">
-                <h2>IPA-Bahasa</h2>
-                <p>Program peminatan integratif yang memadukan keunggulan analisis penalaran sains dengan kemahiran komunikasi multibahasa internasional dan keterampilan penulisan jurnal ilmiah.</p>
-                <h3>Poin Keunggulan Jurusan:</h3>
-                <ul>
-                    <li>Fasilitas laboratorium sains terpadu dan laboratorium bahasa digital multimedia.</li>
-                    <li>Penguasaan literasi ilmiah sains berbahasa Inggris dan bahasa asing pilihan.</li>
-                    <li>Peluang ke jurusan Sains Lingkungan, Jurnalistik Ilmiah, dan Komunikasi Sains.</li>
-                </ul>
-            </div>
-
-            <div class="jurusan-card">
-                <h2>IPS-Sosial</h2>
-                <p>Program peminatan yang mendalami dinamika kemasyarakatan, sosiologi terapan, ilmu hukum, tata kelola pemerintahan, dan kepemimpinan publik di era transformasi sosial.</p>
-                <h3>Poin Keunggulan Jurusan:</h3>
-                <ul>
-                    <li>Kegiatan observasi lapangan, advokasi kemasyarakatan, dan riset analisis sosial.</li>
-                    <li>Pelatihan debat hukum, simulasi peradilan, dan diplomasi kebijakan publik.</li>
-                    <li>Peluang besar ke jurusan Ilmu Hukum, Sosiologi, Ilmu Politik, dan Administrasi Publik.</li>
-                </ul>
-            </div>
-
-            <div class="jurusan-card">
-                <h2>IPS-Bahasa</h2>
-                <p>Program peminatan yang menggabungkan ilmu pengetahuan sosial, ekonomi global, komunikasi massa, dan kajian diplomasi internasional melalui kecakapan bahasa asing yang fasih.</p>
-                <h3>Poin Keunggulan Jurusan:</h3>
-                <ul>
-                    <li>Pelatihan diplomasi internasional, simulasi sidang PBB (Model UN), dan public speaking.</li>
-                    <li>Praktik komunikasi bisnis lintas negara, kewirausahaan, dan kajian budaya global.</li>
-                    <li>Peluang ke jurusan Hubungan Internasional, Ilmu Komunikasi, dan Bisnis Internasional.</li>
-                </ul>
-            </div>
-
-            <div class="jurusan-card">
-                <h2>Bahasa</h2>
-                <p>Program peminatan khusus yang berfokus pada kemahiran linguistik mendalam, kajian sastra, apresiasi seni budaya, penerjemahan profesional, dan penguasaan multibahasa dunia.</p>
-                <h3>Poin Keunggulan Jurusan:</h3>
-                <ul>
-                    <li>Laboratorium Bahasa Digital dengan program persiapan sertifikasi bahasa internasional.</li>
-                    <li>Kajian mendalam sastra Indonesia, bahasa Inggris, Jerman, Jepang, dan penulisan kreatif.</li>
-                    <li>Peluang ke jurusan Sastra & Linguistik, Penerjemah Profesional, Diplomasi, dan Seni Budaya.</li>
-                </ul>
-            </div>
-        </div>
-
-        <section class="card">
-            <h2>Data Jumlah Siswa Tiap Jurusan</h2>
-            <p style="margin-bottom: 20px; color: #4a5568;">Berikut adalah rincian data jumlah peserta didik SMAN 1 Kepanjen pada keenam program peminatan untuk tahun ajaran aktif:</p>
+        <div class="layout-wrapper">
             
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Program Jurusan</th>
-                            <th>Kelas X</th>
-                            <th>Kelas XI</th>
-                            <th>Kelas XII</th>
-                            <th>Total Siswa</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>IPA-Teknik</td>
-                            <td>72 Siswa</td>
-                            <td>72 Siswa</td>
-                            <td>72 Siswa</td>
-                            <td>216 Siswa</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>IPA-Kesehatan</td>
-                            <td>72 Siswa</td>
-                            <td>72 Siswa</td>
-                            <td>72 Siswa</td>
-                            <td>216 Siswa</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>IPA-Bahasa</td>
-                            <td>72 Siswa</td>
-                            <td>72 Siswa</td>
-                            <td>72 Siswa</td>
-                            <td>216 Siswa</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>IPS-Sosial</td>
-                            <td>72 Siswa</td>
-                            <td>72 Siswa</td>
-                            <td>72 Siswa</td>
-                            <td>216 Siswa</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>IPS-Bahasa</td>
-                            <td>72 Siswa</td>
-                            <td>72 Siswa</td>
-                            <td>72 Siswa</td>
-                            <td>216 Siswa</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Bahasa</td>
-                            <td>36 Siswa</td>
-                            <td>36 Siswa</td>
-                            <td>36 Siswa</td>
-                            <td>108 Siswa</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <th colspan="5">Total Keseluruhan Siswa</th>
-                            <th>1.188 Siswa</th>
-                        </tr>
-                    </tfoot>
-                </table>
+            <div class="main-content">
+                
+                <section class="card">
+                    <h2 class="card-title">Kurikulum & Program Unggulan</h2>
+                    <p>SMAN 1 Kepanjen menerapkan <strong>Kurikulum Merdeka</strong> yang berfokus pada pengembangan karakter, literasi numerasi, dan penguasaan sains teknologi melalui pembelajaran berdiferensiasi:</p>
+                    
+                    <div class="grid-3" style="margin-top: 15px;">
+                        <div class="feature-box">
+                            <h4>Kelas Riset & Robotika</h4>
+                            <p>Pembinaan karya ilmiah remaja, logika komputasi dasar, dan eksperimen sains aplikatif.</p>
+                        </div>
+                        <div class="feature-box">
+                            <h4>Bimbingan Intensif PTN</h4>
+                            <p>Persiapan berkala menghadapi SNBP dan UTBK-SNBT bersama tim guru bimbingan konseling.</p>
+                        </div>
+                        <div class="feature-box">
+                            <h4>Literasi Multibahasa</h4>
+                            <p>Penguatan kemahiran bahasa Inggris, Jerman, dan Jepang melalui praktikum di lab bahasa digital.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card" id="program-jurusan">
+                    <h2 class="card-title">Pilihan Program Jurusan</h2>
+                    <p>SMAN 1 Kepanjen menyediakan 6 program peminatan akademik yang terstruktur untuk mengantarkan peserta didik menuju jenjang perguruan tinggi:</p>
+                    
+                    <div class="jurusan-list-grid" style="margin-top: 18px;">
+                        
+                        <div class="jurusan-item" id="ipa-teknik">
+                            <h2>IPA-Teknik</h2>
+                            <p>Program peminatan yang memfokuskan penguasaan sains terapan, matematika tingkat lanjut, rekayasa fisika terapan, logika komputasi, dan robotika modern untuk persiapan studi rumpun keteknikan.</p>
+                            <h3>Poin Keunggulan Jurusan:</h3>
+                            <ul>
+                                <li>Laboratorium Komputer, Fisika Terapan, dan Praktikum Robotika terintegrasi.</li>
+                                <li>Bimbingan intensif persiapan Olimpiade Fisika, Komputer, dan Kompetisi Sains Terapan.</li>
+                                <li>Peluang besar ke jurusan Teknik Informatika, Elektro, Mesin, Sipil, dan Arsitektur.</li>
+                            </ul>
+                        </div>
+
+                        <div class="jurusan-item" id="ipa-kesehatan">
+                            <h2>IPA-Kesehatan</h2>
+                            <p>Program peminatan yang diarahkan pada pendalaman biologi medis, kimia organik, biokimia, dan sains biomedis sebagai fondasi utama pendidikan dokter dan tenaga medis masa depan.</p>
+                            <h3>Poin Keunggulan Jurusan:</h3>
+                            <ul>
+                                <li>Laboratorium Biologi Terpadu, Kimia Analitik, dan Ruang Kultur Jaringan modern.</li>
+                                <li>Pelatihan dasar riset biomedis dan pembinaan Olimpiade Biologi serta Kimia.</li>
+                                <li>Peluang besar ke jurusan Kedokteran Umum, Kedokteran Gigi, Farmasi, dan Bioteknologi.</li>
+                            </ul>
+                        </div>
+
+                        <div class="jurusan-item" id="ipa-bahasa">
+                            <h2>IPA-Bahasa</h2>
+                            <p>Program peminatan integratif yang memadukan keunggulan analisis penalaran sains dengan kemahiran komunikasi multibahasa internasional dan keterampilan penulisan jurnal ilmiah.</p>
+                            <h3>Poin Keunggulan Jurusan:</h3>
+                            <ul>
+                                <li>Fasilitas laboratorium sains terpadu dan laboratorium bahasa digital multimedia.</li>
+                                <li>Penguasaan literasi ilmiah sains berbahasa Inggris dan bahasa asing pilihan.</li>
+                                <li>Peluang ke jurusan Sains Lingkungan, Jurnalistik Ilmiah, dan Komunikasi Sains.</li>
+                            </ul>
+                        </div>
+
+                        <div class="jurusan-item ips" id="ips-sosial">
+                            <h2>IPS-Sosial</h2>
+                            <p>Program peminatan yang mendalami dinamika kemasyarakatan, sosiologi terapan, ilmu hukum, tata kelola pemerintahan, dan kepemimpinan publik di era transformasi sosial.</p>
+                            <h3>Poin Keunggulan Jurusan:</h3>
+                            <ul>
+                                <li>Kegiatan observasi lapangan, advokasi kemasyarakatan, dan riset analisis sosial.</li>
+                                <li>Pelatihan debat hukum, simulasi peradilan, dan diplomasi kebijakan publik.</li>
+                                <li>Peluang besar ke jurusan Ilmu Hukum, Sosiologi, Ilmu Politik, dan Administrasi Publik.</li>
+                            </ul>
+                        </div>
+
+                        <div class="jurusan-item ips" id="ips-bahasa">
+                            <h2>IPS-Bahasa</h2>
+                            <p>Program peminatan yang menggabungkan ilmu pengetahuan sosial, ekonomi global, komunikasi massa, dan kajian diplomasi internasional melalui kecakapan bahasa asing yang fasih.</p>
+                            <h3>Poin Keunggulan Jurusan:</h3>
+                            <ul>
+                                <li>Pelatihan diplomasi internasional, simulasi sidang PBB (Model UN), dan public speaking.</li>
+                                <li>Praktik komunikasi bisnis lintas negara, kewirausahaan, dan kajian budaya global.</li>
+                                <li>Peluang ke jurusan Hubungan Internasional, Ilmu Komunikasi, dan Bisnis Internasional.</li>
+                            </ul>
+                        </div>
+
+                        <div class="jurusan-item bahasa" id="bahasa">
+                            <h2>Bahasa</h2>
+                            <p>Program peminatan khusus yang berfokus pada kemahiran linguistik mendalam, kajian sastra, apresiasi seni budaya, penerjemahan profesional, dan penguasaan multibahasa dunia.</p>
+                            <h3>Poin Keunggulan Jurusan:</h3>
+                            <ul>
+                                <li>Laboratorium Bahasa Digital dengan program persiapan sertifikasi bahasa internasional.</li>
+                                <li>Kajian mendalam sastra Indonesia, bahasa Inggris, Jerman, Jepang, dan penulisan kreatif.</li>
+                                <li>Peluang ke jurusan Sastra & Linguistik, Penerjemah Profesional, Diplomasi, dan Seni Budaya.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="card" id="tabel-siswa">
+                    <h2 class="card-title">Data Jumlah Siswa Tiap Jurusan</h2>
+                    <p>Berikut adalah rincian data resmi jumlah peserta didik SMAN 1 Kepanjen pada keenam program peminatan untuk tahun ajaran aktif:</p>
+                    
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 50px; text-align: center;">No</th>
+                                    <th>Program Jurusan</th>
+                                    <th style="text-align: center;">Kelas X</th>
+                                    <th style="text-align: center;">Kelas XI</th>
+                                    <th style="text-align: center;">Kelas XII</th>
+                                    <th style="text-align: center;">Total Siswa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: center;">1</td>
+                                    <td><strong>IPA-Teknik</strong></td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;"><strong>216 Siswa</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">2</td>
+                                    <td><strong>IPA-Kesehatan</strong></td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;"><strong>216 Siswa</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">3</td>
+                                    <td><strong>IPA-Bahasa</strong></td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;"><strong>216 Siswa</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">4</td>
+                                    <td><strong>IPS-Sosial</strong></td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;"><strong>216 Siswa</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">5</td>
+                                    <td><strong>IPS-Bahasa</strong></td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;">72 Siswa</td>
+                                    <td style="text-align: center;"><strong>216 Siswa</strong></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;">6</td>
+                                    <td><strong>Bahasa</strong></td>
+                                    <td style="text-align: center;">36 Siswa</td>
+                                    <td style="text-align: center;">36 Siswa</td>
+                                    <td style="text-align: center;">36 Siswa</td>
+                                    <td style="text-align: center;"><strong>108 Siswa</strong></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th colspan="5" style="text-align: right; padding-right: 20px;">Total Keseluruhan Siswa</th>
+                                    <th style="text-align: center;">1.188 Siswa</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="card" id="jadwal">
+                    <h2 class="card-title">Jadwal Belajar & Kalender Akademik</h2>
+                    <p>Kegiatan pembelajaran diselenggarakan dari hari Senin hingga Jumat dengan rincian jadwal sebagai berikut:</p>
+                    
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 25%;">Hari</th>
+                                    <th style="width: 30%;">Waktu Belajar</th>
+                                    <th>Keterangan Kegiatan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Senin</td>
+                                    <td>06.45 - 15.30 WIB</td>
+                                    <td>Upacara Bendera, Pembiasaan Karakter, KBM Reguler</td>
+                                </tr>
+                                <tr>
+                                    <td>Selasa - Kamis</td>
+                                    <td>07.00 - 15.30 WIB</td>
+                                    <td>Sholat Dhuha / Literasi Pagi, KBM Reguler, Praktikum Lab</td>
+                                </tr>
+                                <tr>
+                                    <td>Jumat</td>
+                                    <td>06.45 - 11.30 WIB</td>
+                                    <td>Senam Sehat / Green Action Adiwiyata, KBM Singkat, Sholat Jumat</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="card" id="kesiswaan">
+                    <h2 class="card-title">Kesiswaan & Ekstrakurikuler</h2>
+                    <p>SMAN 1 Kepanjen mendukung penyaluran minat, bakat, kepemimpinan, dan sportivitas peserta didik melalui berbagai organisasi dan klub kesiswaan:</p>
+                    
+                    <h3>Organisasi Siswa</h3>
+                    <p><strong>OSIS (Organisasi Siswa Intra Sekolah):</strong> Lembaga penggerak kegiatan kesiswaan, peringatan hari besar, pentas seni, dan bakti sosial.</p>
+                    <p><strong>MPK (Majelis Perwakilan Kelas):</strong> Badan perwakilan dan pengawasan yang menampung aspirasi peserta didik antar-kelas.</p>
+
+                    <h3>Daftar Ekstrakurikuler</h3>
+                    <div class="grid-3" style="margin-top: 10px;">
+                        <div class="feature-box">
+                            <h4>Bidang Olahraga</h4>
+                            <p>Bola Basket (DBL Club), Futsal, Bola Voli, Bulutangkis, dan Bela Diri Karate.</p>
+                        </div>
+                        <div class="feature-box">
+                            <h4>Bidang Seni & Bahasa</h4>
+                            <p>Tari Tradisional, Karawitan, Teater, Paduan Suara, dan English Debating Society.</p>
+                        </div>
+                        <div class="feature-box">
+                            <h4>Bidang Kepemimpinan</h4>
+                            <p>Paskibra (Bhirawa), Pramuka Gugus Depan, PMR Wira, dan Kelompok Ilmiah Remaja (KIR).</p>
+                        </div>
+                    </div>
+                </section>
+
             </div>
-        </section>
+
+            <aside class="sidebar">
+                
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">Menu Akademik</h3>
+                    <ul class="sidebar-menu">
+                        <li><a href="#program-jurusan">- 6 Peminatan Jurusan</a></li>
+                        <li><a href="#tabel-siswa">- Tabel Jumlah Siswa</a></li>
+                        <li><a href="#jadwal">- Jadwal & Waktu Belajar</a></li>
+                        <li><a href="#kesiswaan">- OSIS & Ekstrakurikuler</a></li>
+                        <li><a href="ppdb.html">- Pendaftaran Siswa Baru</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget" style="border-top: 3px solid #154c79;">
+                    <h3 class="sidebar-title">Ringkasan Data</h3>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Jumlah Kelas:</strong> 33 Rombel</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Total Siswa:</strong> 1.188 Peserta Didik</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;"><strong>Rata-rata Siswa/Kelas:</strong> 36 Siswa</p>
+                    <p style="font-size: 13px; margin-bottom: 0;"><strong>Akreditasi:</strong> Peringkat A</p>
+                </div>
+
+                <div class="sidebar-widget" style="border-top: 3px solid #e67e22;">
+                    <h3 class="sidebar-title">Informasi PPDB</h3>
+                    <p style="font-size: 13px; color: #555555; margin-bottom: 12px;">Pendaftaran siswa baru tahun ajaran 2027/2028 telah dibuka. Cek persyaratan dan alur pendaftaran secara online.</p>
+                    <a href="ppdb.html" class="btn btn-primary btn-block">Lihat Info PPDB</a>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">Layanan Akademik</h3>
+                    <p style="font-size: 13px; line-height: 1.5; margin-bottom: 6px;">Ruang Tata Usaha & Bimbingan Konseling</p>
+                    <p style="font-size: 13px; margin-bottom: 6px;">Senin - Jumat: 07.30 - 15.00 WIB</p>
+                    <p style="font-size: 13px; margin-bottom: 12px;">Telp: (0341) 987654</p>
+                    <a href="kontak.html" class="btn btn-secondary btn-block" style="border: 1px solid #154c79;">Hubungi Kami</a>
+                </div>
+
+            </aside>
+
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-container">
+    <footer class="footer">
+        <div class="container footer-container">
             <div class="footer-col">
                 <h3>SMAN 1 Kepanjen</h3>
-                <p>Sekolah Menengah Atas Negeri unggulan di Kabupaten Malang yang berdedikasi mencetak generasi berkarakter luhur, berprestasi tinggi, dan berbudaya lingkungan.</p>
+                <p>Sekolah Menengah Atas Negeri unggulan di Kabupaten Malang yang berdedikasi mencetak generasi berkarakter luhur, berprestasi tinggi, dan berbudaya lingkungan hidup.</p>
+                <p style="font-size: 12px; color: #9cb1c5; margin-top: 10px;">NPSN: 20517724 | NSS: 301051806001</p>
             </div>
             <div class="footer-col">
                 <h3>Tautan Cepat</h3>
                 <ul>
-                    <li><a href="index.html">Halaman Utama (Home)</a></li>
+                    <li><a href="index.html">Beranda (Home)</a></li>
+                    <li><a href="index.html#profil">Profil & Sambutan</a></li>
                     <li><a href="jurusan.html">Program Jurusan</a></li>
-                    <li><a href="kontak.html">Hubungi Kami (Kontak)</a></li>
+                    <li><a href="jurusan.html#kesiswaan">Kesiswaan & Ekskul</a></li>
+                    <li><a href="berita.html">Warta & Berita</a></li>
+                    <li><a href="galeri.html">Galeri Foto</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h3>Kontak Singkat</h3>
+                <h3>Program Jurusan</h3>
+                <ul>
+                    <li><a href="#ipa-teknik">IPA - Teknik</a></li>
+                    <li><a href="#ipa-kesehatan">IPA - Kesehatan</a></li>
+                    <li><a href="#ipa-bahasa">IPA - Bahasa</a></li>
+                    <li><a href="#ips-sosial">IPS - Sosial</a></li>
+                    <li><a href="#ips-bahasa">IPS - Bahasa</a></li>
+                    <li><a href="#bahasa">Bahasa & Sastra</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Alamat & Kontak</h3>
                 <p>Jl. Raya Pendidikan No. 123, Kepanjen, Malang, Jawa Timur 65163</p>
                 <p>Telepon: (0341) 987654</p>
                 <p>Email: info@sman1kepanjen-dummy.sch.id</p>
+                <p>Jam Kerja: Senin - Jumat (07.00 - 15.30 WIB)</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 SMAN 1 Kepanjen. Hak Cipta Dilindungi.</p>
+            <div class="container">
+                <p>&copy; 2026 SMAN 1 Kepanjen. Hak Cipta Dilindungi.</p>
+            </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
