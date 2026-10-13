@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.main-wrapper {
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-title {
+    text-align: center;
+    color: #333333;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+.form-container {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    height: 40px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.15);
+}
+
+select {
+    cursor: pointer;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.btn {
+    background-color: #0d6efd;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #0b5ed7;
+}
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 4px 4px;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    color: #333333;
+}
+
+.autocomplete-items div:hover {
+    background-color: #f1f3f5;
+}

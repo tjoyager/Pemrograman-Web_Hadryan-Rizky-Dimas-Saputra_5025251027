@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Validation Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="email-page">
+  <div class="email-container">
+    <h2 class="form-title">Email Validation Form</h2>
+    <form id="emailValidationForm" novalidate>
+      <div class="form-group">
+        <label for="validationEmail">Enter your email:</label>
+        <input type="text" id="validationEmail" name="validationEmail" placeholder="example@domain.com">
+        <span class="error-message email-error" id="validationEmailError">Please enter a valid email address.</span>
+      </div>
+      <button type="submit" class="btn btn-success" id="btnEmailSubmit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

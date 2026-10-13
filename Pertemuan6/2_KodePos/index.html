@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kode Pos Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Kode Pos Indonesia</h1>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="search-box">
+            <p>Cari kode pos di wilayah Indonesia dengan memasukkan beberapa kata kunci pencarian di bawah ini.</p>
+            
+            <div class="form-group">
+                <label for="provinsi">Provinsi</label>
+                <div class="select-wrapper">
+                    <select id="provinsi">
+                        <option value="">Pilih Provinsi</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="kota">Kota atau Kabupaten</label>
+                <div class="select-wrapper">
+                    <select id="kota" disabled>
+                        <option value="">Pilih Kota/Kabupaten</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="kecamatan">Kecamatan</label>
+                <div class="select-wrapper">
+                    <select id="kecamatan" disabled>
+                        <option value="">Pilih Kecamatan</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="keyword">Masukkan Kata Kunci Pencarian (Kelurahan)</label>
+                <div class="input-group">
+                    <span class="input-icon"><i class="fas fa-search"></i></span>
+                    <input type="text" id="keyword" placeholder="Masukkan kelurahan..." autocomplete="off">
+                    <button type="button" id="btn-cari" class="btn-search">Cari</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="result-section" id="result-section" style="display: none;">
+            <h2>Hasil Pencarian</h2>
+            <p id="result-summary">Hasil pencarian kode pos dengan menggunakan kata kunci "..." telah ditemukan sebanyak ... buah.</p>
+            
+            <div id="result-cards-container" class="cards-container">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
