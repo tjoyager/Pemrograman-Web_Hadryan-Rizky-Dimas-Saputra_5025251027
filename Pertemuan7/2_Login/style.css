@@ -1,0 +1,272 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.row.g-0 {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+}
+
+.bg-image {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+    min-height: 100vh;
+    background-image: url('Files/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.row.g-0 > div:last-child,
+.col-md-6.col-lg-6:last-child,
+.col-md-8.col-lg-6 {
+    flex: 0 0 50%;
+    width: 50%;
+    max-width: 50%;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+
+.login {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 2rem 1.5rem;
+}
+
+.login .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.login .row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.login .col-md-9,
+.login .col-lg-8,
+.login .mx-auto {
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent;
+}
+
+
+.login-heading {
+    color: #888888; 
+    font-size: 1.35rem;
+    font-weight: 400;
+    margin-bottom: 2rem !important; 
+    text-align: left;
+}
+
+
+.form-floating {
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.form-control {
+    width: 100% !important;
+    border: 1px solid #dddddd !important;
+    border-radius: 2px !important; 
+    padding: 0.85rem 1rem !important; 
+    font-size: 0.95rem;
+    color: #333333;
+    background-color: #ffffff;
+    box-shadow: none !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-floating > .form-control {
+    padding-top: 1.625rem !important;
+    padding-bottom: 0.625rem !important;
+    padding-left: 0.85rem !important;
+    padding-right: 0.85rem !important;
+    height: calc(3.5rem + 2px);
+}
+
+.form-control:focus {
+    border-color: #1877F2 !important;
+    box-shadow: 0 0 0 1px #1877F2 !important;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #aaaaaa !important;
+    opacity: 1;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #aaaaaa !important;
+}
+
+.form-control::-moz-placeholder {
+    color: #aaaaaa !important;
+    opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #aaaaaa !important;
+}
+
+.form-floating > .form-control:not(:focus)::placeholder {
+    color: transparent !important;
+}
+
+.form-floating > .form-control:focus::placeholder {
+    color: #aaaaaa !important;
+}
+
+.form-floating > label {
+    color: #888888 !important;
+    padding: 1rem 0.85rem;
+    font-size: 0.95rem;
+}
+
+
+.form-check {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    padding-left: 0 !important;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem !important; 
+}
+
+.form-check-input {
+    float: none !important;
+    margin: 0 0.5rem 0 0 !important;
+    border: 1px solid #dddddd !important;
+    border-radius: 2px !important;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #1877F2 !important;
+    border-color: #1877F2 !important;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.2rem rgba(24, 119, 242, 0.2) !important;
+}
+
+.form-check-label {
+    color: #888888 !important;
+    font-size: 0.85rem !important;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.d-grid {
+    width: 100%;
+}
+
+.btn-login,
+.btn-primary.btn-login,
+button[type="submit"] {
+    width: 100% !important; 
+    background-color: #1877F2 !important;
+    color: #ffffff !important; 
+    text-transform: uppercase !important; 
+    font-weight: 700 !important; 
+    border: none !important; 
+    border-radius: 3px !important;
+    padding: 0.85rem 1rem !important;
+    font-size: 0.95rem !important;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    display: block;
+    box-shadow: none !important;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-login:hover,
+.btn-primary.btn-login:hover,
+button[type="submit"]:hover {
+    background-color: #166fe5 !important;
+    color: #ffffff !important;
+}
+
+.btn-login:active,
+.btn-primary.btn-login:active,
+button[type="submit"]:active {
+    background-color: #145dbf !important;
+    color: #ffffff !important;
+}
+
+
+.text-center {
+    text-align: center !important;
+    margin-top: 0.75rem;
+}
+
+.text-center a,
+a.small {
+    display: inline-block;
+    color: #1877F2 !important;
+    text-decoration: underline !important;
+    font-size: 0.85rem !important;
+    transition: color 0.2s ease;
+}
+
+.text-center a:hover,
+a.small:hover {
+    color: #166fe5 !important;
+    text-decoration: underline !important;
+}
+
+
+@media (max-width: 767.98px) {
+    .row.g-0 {
+        flex-direction: column;
+    }
+
+    .bg-image {
+        display: none !important;
+    }
+
+    .row.g-0 > div:last-child,
+    .col-md-6.col-lg-6:last-child,
+    .col-md-8.col-lg-6 {
+        flex: 0 0 100% !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
