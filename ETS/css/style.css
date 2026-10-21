@@ -1,0 +1,252 @@
+:root {
+  --its-blue: #0078c1;
+  --its-light-blue: #82c1e2;
+  --its-yellow: #fff000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button,
+img,
+code,
+pre,
+.btn,
+.btn-sm,
+.btn-lg,
+.btn-close,
+.btn-group,
+.card,
+.card-header,
+.card-body,
+.card-footer,
+.card-img,
+.card-img-top,
+.card-img-bottom,
+.form-control,
+.form-select,
+.form-check-input,
+.input-group,
+.input-group-text,
+.alert,
+.badge,
+.modal-content,
+.modal-header,
+.modal-body,
+.modal-footer,
+.nav,
+.nav-tabs,
+.nav-pills,
+.nav-link,
+.navbar-toggler,
+.dropdown-menu,
+.dropdown-item,
+.pagination,
+.page-link,
+.list-group,
+.list-group-item,
+.table,
+.progress,
+.progress-bar,
+.toast,
+.toast-header,
+.toast-body,
+.accordion-item,
+.accordion-button,
+.tooltip,
+.tooltip-inner,
+.popover,
+.popover-header,
+.popover-body,
+.rounded,
+.rounded-0,
+.rounded-1,
+.rounded-2,
+.rounded-3,
+.rounded-4,
+.rounded-5,
+.rounded-top,
+.rounded-end,
+.rounded-bottom,
+.rounded-start,
+.rounded-circle,
+.rounded-pill {
+  border-radius: 0 !important;
+}
+
+body {
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfcfc;
+  color: #333333;
+}
+
+.text-its-blue { color: var(--its-blue) !important; }
+.text-its-light { color: var(--its-light-blue) !important; }
+.text-its-yellow { color: var(--its-yellow) !important; }
+
+.bg-its-blue { background-color: var(--its-blue) !important; }
+.bg-its-light-blue { background-color: var(--its-light-blue) !important; }
+.bg-its-light { background-color: rgba(130, 193, 226, 0.15) !important; }
+.bg-its-yellow { background-color: var(--its-yellow) !important; }
+
+.border-its-blue { border-color: var(--its-blue) !important; }
+.border-its-yellow { border-color: var(--its-yellow) !important; }
+
+.btn-its-yellow {
+  background-color: var(--its-yellow);
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 0 !important;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+.btn-its-yellow:hover,
+.btn-its-yellow:focus {
+  background-color: #e6d800;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-its-blue {
+  background-color: var(--its-blue);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 0 !important;
+  transition: all 0.2s;
+}
+.btn-its-blue:hover,
+.btn-its-blue:focus {
+  background-color: #005a91;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 120, 193, 0.25);
+}
+
+.btn-outline-its {
+  border: 2px solid var(--its-blue);
+  color: var(--its-blue);
+  font-weight: 600;
+  border-radius: 0 !important;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.btn-outline-its:hover,
+.btn-outline-its:focus {
+  background-color: var(--its-blue);
+  color: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--its-blue);
+  box-shadow: 0 0 0 0.25rem rgba(0, 120, 193, 0.2);
+}
+
+.navbar {
+  padding: 15px 0;
+  transition: all 0.3s;
+}
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #444;
+  margin: 0 5px;
+  position: relative;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--its-blue);
+}
+.navbar-nav .nav-link.active {
+  color: var(--its-blue) !important;
+  font-weight: bold;
+  border-bottom: 2px solid var(--its-yellow);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, rgba(0, 120, 193, 0.95) 0%, rgba(0, 60, 100, 0.95) 100%),
+              url('https://www.its.ac.id/news/wp-content/uploads/sites/2/2017/11/Perpus_Ext-01-2.jpg') center/cover fixed;
+  color: white;
+  padding: 120px 0 100px;
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 0 !important;
+  background-color: var(--its-light-blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 20px;
+}
+
+.card-hover {
+  border: none;
+  border-radius: 0 !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 120, 193, 0.1);
+}
+
+section {
+  padding: 80px 0;
+}
+.section-title {
+  font-weight: 700;
+  color: var(--its-blue);
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: var(--its-yellow);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  background-color: #002244;
+  color: #d1d1d1;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 120, 193, 0.04);
+}
+
+.badge-mahasiswa {
+  background-color: #0078c1;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.badge-dosen {
+  background-color: #ff9800;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.badge-tendik {
+  background-color: #5c6bc0;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}

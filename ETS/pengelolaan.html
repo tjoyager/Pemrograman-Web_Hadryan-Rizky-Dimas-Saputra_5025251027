@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dasbor Pengelolaan Anggota - LibraryReg</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-expand-lg bg-its-blue navbar-dark sticky-top shadow-sm">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="pengelolaan.html">
+        <i class="fa-solid fa-book-open-reader fs-3 text-its-yellow me-2"></i>
+        <span>LibraryReg <span class="fw-normal fs-6 text-light opacity-75">| Dasbor Petugas</span></span>
+      </a>
+      <div class="d-flex align-items-center gap-2">
+        <span class="navbar-text text-white me-2 d-none d-md-inline-block">
+          <i class="fa-solid fa-circle-user me-1 text-its-yellow"></i> Petugas Perpustakaan
+        </span>
+        <a href="index.html" class="btn btn-sm btn-its-yellow">
+          <i class="fa-solid fa-globe me-1"></i> Beranda
+        </a>
+        <a href="login.html" class="btn btn-sm btn-outline-light">
+          <i class="fa-solid fa-right-from-bracket me-1"></i> Keluar
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid px-4 py-4">
+    
+    <div class="row g-3 mb-4">
+      <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm border-start border-4 border-its-blue bg-white p-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="text-muted small fw-bold text-uppercase">Total Anggota</span>
+              <h3 class="fw-bold text-its-blue mb-0" id="statTotal">0</h3>
+            </div>
+            <i class="fa-solid fa-users fs-2 text-its-light"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm border-start border-4 border-its-blue bg-white p-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="text-muted small fw-bold text-uppercase">Mahasiswa</span>
+              <h3 class="fw-bold text-dark mb-0" id="statMahasiswa">0</h3>
+            </div>
+            <i class="fa-solid fa-user-graduate fs-2 text-its-blue"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm border-start border-4 border-warning bg-white p-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="text-muted small fw-bold text-uppercase">Dosen</span>
+              <h3 class="fw-bold text-dark mb-0" id="statDosen">0</h3>
+            </div>
+            <i class="fa-solid fa-chalkboard-user fs-2 text-warning"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-xl-3">
+        <div class="card border-0 shadow-sm border-start border-4 border-primary bg-white p-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <span class="text-muted small fw-bold text-uppercase">Tenaga Kependidikan</span>
+              <h3 class="fw-bold text-dark mb-0" id="statTendik">0</h3>
+            </div>
+            <i class="fa-solid fa-id-badge fs-2 text-primary"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="manageAlert"></div>
+
+    <div class="card shadow-sm border-0">
+      <div class="card-header bg-white py-3 border-bottom d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <div>
+          <h5 class="mb-0 fw-bold text-its-blue">
+            <i class="fa-solid fa-table-list me-2"></i>Daftar Anggota Perpustakaan
+          </h5>
+        </div>
+        
+        <div class="d-flex flex-wrap align-items-center gap-2">
+          <div class="input-group" style="min-width: 280px;">
+            <span class="input-group-text bg-light text-muted border-end-0">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Cari Nama atau NRP/NIP...">
+          </div>
+          <a href="pendaftaran.html" class="btn btn-its-yellow">
+            <i class="fa-solid fa-plus me-1"></i> Tambah Anggota
+          </a>
+        </div>
+      </div>
+      
+      <div class="card-body p-0">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="bg-its-blue text-white">
+              <tr>
+                <th class="ps-3 py-3" style="width: 50px;">No</th>
+                <th class="py-3">Nama Lengkap &amp; Kontak</th>
+                <th class="py-3">NRP / NIP</th>
+                <th class="py-3">Kategori</th>
+                <th class="py-3">Program Studi</th>
+                <th class="py-3 text-center" style="width: 150px;">Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+          </table>
+        </div>
+        
+        <div id="emptyMessage" class="text-center py-5 text-muted d-none">
+          <i class="fa-solid fa-box-open fs-1 mb-3 text-secondary"></i>
+          <h6 class="fw-bold">Tidak ada data anggota ditemukan</h6>
+          <p class="small mb-0">Silakan periksa kata kunci pencarian atau tambah anggota baru melalui formulir pendaftaran.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="modalEditLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-its-blue text-white">
+          <h5 class="modal-title fw-bold" id="modalEditLabel">
+            <i class="fa-solid fa-pen-to-square me-2 text-its-yellow"></i>Edit Data Anggota
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 bg-light">
+          <div id="editAlert"></div>
+
+          <form id="formEdit" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="editNrp" class="form-label fw-bold small">NRP / NIP (Terkunci / Read-Only)</label>
+                <div class="input-group">
+                  <span class="input-group-text bg-white"><i class="fa-solid fa-lock text-muted"></i></span>
+                  <input type="text" class="form-control bg-light text-muted fw-bold" id="editNrp" readonly>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="editNama" class="form-label fw-bold small">Nama Lengkap <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="editNama" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="editKategori" class="form-label fw-bold small">Jenis Keanggotaan <span class="text-danger">*</span></label>
+                <select class="form-select" id="editKategori" required>
+                  <option value="Mahasiswa">Mahasiswa</option>
+                  <option value="Dosen">Dosen</option>
+                  <option value="Tenaga Kependidikan">Tenaga Kependidikan</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label for="editProdi" class="form-label fw-bold small">Program Studi <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="editProdi" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="editEmail" class="form-label fw-bold small">Alamat Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="editEmail" required>
+              </div>
+
+              <div class="col-md-6">
+                <label for="editTelepon" class="form-label fw-bold small">Nomor Telepon <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control" id="editTelepon" required>
+              </div>
+
+              <div class="col-12">
+                <label for="editAlamat" class="form-label fw-bold small">Alamat Domisili <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="editAlamat" rows="3" required></textarea>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2 mt-4">
+              <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Batal</button>
+              <button type="submit" class="btn btn-its-yellow px-4">
+                <i class="fa-solid fa-floppy-disk me-1"></i> Simpan Perubahan
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalDetail" tabindex="-1" aria-labelledby="modalDetailLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        <div class="modal-header bg-its-blue text-white">
+          <h5 class="modal-title fw-bold" id="modalDetailLabel">
+            <i class="fa-solid fa-address-card me-2 text-its-yellow"></i>Detail Informasi Anggota
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 bg-white">
+          <table class="table table-bordered mb-0">
+            <tbody>
+              <tr>
+                <th class="bg-light" style="width: 35%;">NRP / NIP</th>
+                <td id="detailNrp" class="fw-bold text-its-blue"></td>
+              </tr>
+              <tr>
+                <th class="bg-light">Nama Lengkap</th>
+                <td id="detailNama" class="fw-bold"></td>
+              </tr>
+              <tr>
+                <th class="bg-light">Kategori</th>
+                <td id="detailKategori"></td>
+              </tr>
+              <tr>
+                <th class="bg-light">Program Studi</th>
+                <td id="detailProdi"></td>
+              </tr>
+              <tr>
+                <th class="bg-light">Email</th>
+                <td id="detailEmail"></td>
+              </tr>
+              <tr>
+                <th class="bg-light">Nomor Telepon</th>
+                <td id="detailTelepon"></td>
+              </tr>
+              <tr>
+                <th class="bg-light">Alamat</th>
+                <td id="detailAlamat"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer bg-light py-2">
+          <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

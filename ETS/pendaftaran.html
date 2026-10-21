@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Anggota - LibraryReg</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="fa-solid fa-book-open-reader fs-2 text-its-blue me-2"></i>
+        <div class="lh-1">
+          <span class="fw-bold text-its-blue fs-4">LibraryReg</span><br>
+          <small class="text-muted" style="font-size: 11px; letter-spacing: 1px;">PERPUSTAKAAN</small>
+        </div>
+      </a>
+      <div>
+        <a href="index.html" class="btn btn-outline-its px-3">
+          <i class="fa-solid fa-arrow-left me-1"></i> Kembali ke Beranda
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0">
+          <div class="card-header bg-its-blue text-white py-3">
+            <h4 class="mb-0 fw-bold text-center">
+              <i class="fa-solid fa-id-card me-2 text-its-yellow"></i>Formulir Pendaftaran Anggota Baru
+            </h4>
+          </div>
+          <div class="card-body p-4 bg-light">
+            
+            <div id="alertContainer"></div>
+            
+            <form id="formPendaftaran" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="namaLengkap" class="form-label fw-bold">Nama Lengkap <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="namaLengkap" placeholder="Masukkan nama lengkap beserta gelar" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="nomorInduk" class="form-label fw-bold">NRP / NIP <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="nomorInduk" placeholder="Contoh: 5025211001 atau 1985..." required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="jenisAnggota" class="form-label fw-bold">Jenis Keanggotaan <span class="text-danger">*</span></label>
+                  <select class="form-select" id="jenisAnggota" required>
+                    <option value="">Pilih Jenis Keanggotaan</option>
+                    <option value="Mahasiswa">Mahasiswa</option>
+                    <option value="Dosen">Dosen</option>
+                    <option value="Tenaga Kependidikan">Tenaga Kependidikan</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="prodi" class="form-label fw-bold">Program Studi <span class="text-danger">*</span></label>
+                  <select class="form-select" id="prodi" required>
+                    <option value="">Pilih Program Studi</option>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Teknologi Informasi">Teknologi Informasi</option>
+                    <option value="Teknik Elektro">Teknik Elektro</option>
+                    <option value="Teknik Komputer">Teknik Komputer</option>
+                    <option value="Lainnya">Lainnya (Tulis Sendiri)</option>
+                  </select>
+                </div>
+
+                <div class="col-12 d-none" id="divProdiManual">
+                  <label for="prodiManual" class="form-label fw-bold text-its-blue">
+                    <i class="fa-solid fa-pen-to-square me-1"></i>Tuliskan Nama Program Studi <span class="text-danger">*</span>
+                  </label>
+                  <input type="text" class="form-control border-its-blue" id="prodiManual" placeholder="Tulis nama program studi Anda">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label fw-bold">Alamat Email <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" placeholder="nama@domain.com" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="telepon" class="form-label fw-bold">Nomor Telepon / WhatsApp <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="telepon" placeholder="08xxxxxxxxxx" required>
+                </div>
+
+                <div class="col-12">
+                  <label for="alamat" class="form-label fw-bold">Alamat Domisili <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="alamat" rows="3" placeholder="Masukkan alamat domisili saat ini" required></textarea>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-its-yellow w-100 py-2 fs-6">
+                    <i class="fa-solid fa-user-plus me-1"></i> Daftar Menjadi Anggota
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-4 mt-5">
+    <div class="container text-center small opacity-75">
+      &copy; 2026 LibraryReg - Copyright.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
