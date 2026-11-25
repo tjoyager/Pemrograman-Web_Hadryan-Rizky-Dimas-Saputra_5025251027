@@ -1,0 +1,11 @@
+# File upload storage
+storage/dokumen/*
+!storage/dokumen/.gitkeep
+!storage/dokumen/.htaccess
+
+# Sistem operasi dan editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
